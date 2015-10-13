@@ -1,0 +1,108 @@
+html, body {
+  width: 600px;
+  padding: 0;
+  margin: 0;
+  font-family: 'Helvetica Neue', Helvetica, Arial;
+}
+:focus {
+  outline: none;
+}
+.header {
+  padding: 0 15px 3px 15px;
+  margin: 0;
+  background: #6441a5;
+  vertical-align: middle;
+  display: flex;
+}
+a {
+  color: #6441a5;
+}
+.header .title {
+  flex-shrink: 0;
+  flex-grow: 2;
+}
+.header h1 {
+  margin-left: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #fff;
+  display: inline-block;
+}
+.header img {
+  width: 24px;
+  vertical-align: middle;
+}
+.header .options {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  cursor: pointer;
+}
+.message {
+  text-align: center;
+  padding: 40px 0;
+  font-size: 15px;
+  background: #f3f3f3;
+  color: #555;
+}
+ul.streams {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.stream {
+  display: flex;
+  font-size: 14px;
+  padding: 17px 15px 15px 15px;
+  margin: 0;
+  border-bottom: 1px solid #f3f3f3;
+  cursor: pointer;
+}
+.stream:hover {
+  background: #fef;
+}
+.stream:last-child {
+  border-bottom: 0;
+}
+.stream .logo {
+  margin-right: 7px;
+}
+.stream .logo img {
+  width: 45px;
+  border-radius: 4px;
+}
+.stream .info {
+  flex-shrink: 0;
+  flex-grow: 2;
+}
+.stream .top {
+  display: flex;
+}
+.stream .top .name-game {
+  flex-shrink: 0;
+  flex-grow: 2;
+}
+.stream .name {
+  color: #64a;
+  font-size: 14px;
+  font-weight: 500;
+  margin-right: 3px;
+}
+.stream .status {
+  color: #777;
+  line-height: 25px;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 500px;
+}
+.stream .game {
+  color: #999;
+}
+.stream .viewers {
+  color: #777;
+}
+.stream .viewers .icon {
+  fill: red;
+  position: relative;
+  top: 3px;
+}

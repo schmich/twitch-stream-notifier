@@ -1,0 +1,102 @@
+body {
+  width: 400px;
+  padding: 25px 35px 10px 35px;
+  margin: 0;
+  font-family: 'Helvetica Neue', Helvetica, Arial;
+}
+h2 {
+  text-align: center;
+  font-size: 14px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 5px;
+  margin: 25px 0 0 0;
+}
+h3 {
+  font-size: 17px;
+  margin: 0;
+  padding: 0;
+}
+p {
+  display: inline-block;
+  margin: 0;
+}
+.channels {
+  padding: 0;
+  margin: 0 0 15px 0;
+  height: 200px;
+  overflow: auto;
+  border-bottom: 1px solid #eee;
+  font-size: 14px;
+  list-style-type: none;
+  line-height: 150%;
+  color: #555;
+}
+.channels li {
+  margin: 0;
+  padding: 0;
+}
+.tabs {
+  padding-bottom: 6px;
+  border-bottom: 1px solid #bbb;
+  margin-bottom: 20px;
+}
+.tab {
+  color: #000;
+  cursor: pointer;
+  font-size: larger;
+  text-decoration: none;
+  padding: 0 10px 5px 10px;
+}
+.tab.active {
+  border-bottom: 2px solid #6441a5;
+}
+.tab-page:not(.active) {
+  display: none;
+}
+.about {
+  padding: 25px 0;
+}
+.about a {
+  color: #6441a5 !important;
+}
+.field {
+  margin-bottom: 15px;
+}
+.field.username {
+  padding: 15px 0;
+}
+.field p {
+  margin-top: 5px;
+  margin-left: 20px;
+}
+input:not([type="text"]), button:not(:disabled), label {
+  cursor: pointer;
+}
+button {
+  margin-top: 15px;
+  padding: 10px 25px !important;
+  color: #fff !important;
+  background: #6441a5 !important;
+  text-shadow: none !important;
+  border: 0 !important;
+  box-shadow: none !important;
+}
+button:disabled {
+  color: #999 !important;
+  background: #ddd !important;
+}
+.nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.links {
+  margin-top: 15px;
+}
+.licenses {
+  margin-top: 15px;
+}
+.licenses a {
+  display: block;
+  margin-top: 3px;
+}

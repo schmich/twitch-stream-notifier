@@ -1,0 +1,38 @@
+{
+  "name": "Twitch Stream Notifier",
+  "short_name": "Twitch Stream Notifier",
+  "version": "1.0.0",
+  "manifest_version": 2,
+  "description": "Notifies you when your favorite streamers go live on Twitch.tv.",
+  "author": "Chris Schmich <schmch@gmail.com>",
+  "homepage_url": "https://github.com/schmich/twitch-stream-notifier",
+  "offline_enabled": false,
+  "permissions": [
+    "contextMenus",
+    "tabs",
+    "storage",
+    "notifications",
+    "https://api.twitch.tv/",
+    "http://static-cdn.jtvnw.net/"
+  ],
+  "browser_action": {
+    "default_title": "Twitch Stream Notifier",
+    "default_icon": "icons/browser-action.png",
+    "default_popup": "popup/popup.html"
+  },
+  "background": {
+    "persistent": true,
+    "scripts": ["lib/EventEmitter.min.js", "background.js"]
+  },
+  "options_ui": {
+    "page": "options/options.html",
+    "chrome_style": true
+  },
+  "icons": {
+    "16": "icons/128.png",
+    "32": "icons/128.png",
+    "64": "icons/128.png",
+    "128": "icons/128.png"
+  },
+  "content_security_policy": "script-src 'self'; object-src 'self'; img-src 'self' http://static-cdn.jtvnw.net/"
+}
