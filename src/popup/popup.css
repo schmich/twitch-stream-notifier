@@ -59,7 +59,7 @@ ul.streams {
   cursor: pointer;
 }
 .stream:hover {
-  background: #fef;
+  background: #f3edff;
 }
 .stream:last-child {
   border-bottom: 0;
